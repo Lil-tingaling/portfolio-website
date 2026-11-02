@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Florence Ashiagbor | Computer Science Student</title>
+  <meta name="description" content="Portfolio of Florence Ashiagbor, a Computer Science student based in Ghana." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    // Apply saved theme before paint to avoid a flash
+    try {
+      const saved = localStorage.getItem("theme");
+      if (saved) document.documentElement.setAttribute("data-theme", saved);
+    } catch (e) {}
+  </script>
+</head>
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="nav-wrap">
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#home" class="brand" aria-label="Florence – home">
+        <span class="brand-dot"></span>
+        <span class="brand-name">Florence</span>
+      </a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li class="nav-cta-mobile"><a href="#contact">Let’s talk</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+          <!-- moon -->
+          <svg class="icon-moon" viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z" />
+          </svg>
+          <!-- sun -->
+          <svg class="icon-sun" viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4" />
+            <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" />
+          </svg>
+        </button>
+        <a href="#contact" class="btn btn-white nav-cta">Let’s talk</a>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+          <span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero container" id="home">
+      <div class="hero-text reveal">
+        <h1>I’m Florence <br />Ashiagbor</h1>
+        <p class="hero-sub">A Computer Science Student based in Ghana</p>
+
+        <div class="btn-group">
+          <a href="#projects" class="btn btn-yellow">
+            Portfolio
+            <span class="arrow-circle" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </span>
+          </a>
+          <a href="#contact" class="btn btn-outline">Hire Me</a>
+        </div>
+
+        <ul class="hero-stats">
+          <li><strong>10+</strong><span>Projects built</span></li>
+          <li><strong>3+</strong><span>Years coding</span></li>
+          <li><strong>5</strong><span>Technologies</span></li>
+        </ul>
+      </div>
+
+      <figure class="hero-image reveal">
+        <!--
+          TO USE YOUR PHOTO: delete the .placeholder div below and uncomment:
+          <img src="assets/florence.jpg" alt="Portrait of Florence Ashiagbor" />
+        -->
+        <div class="placeholder" role="img" aria-label="Photo placeholder">
+          <svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+            <line x1="0" y1="0" x2="100" y2="100" vector-effect="non-scaling-stroke" />
+            <line x1="100" y1="0" x2="0" y2="100" vector-effect="non-scaling-stroke" />
+          </svg>
+        </div>
+        <span class="badge badge-top">Open to internships</span>
+        <span class="badge badge-bottom">📍 Ghana</span>
+      </figure>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Python</span><span>React</span><span>Git</span><span>Node.js</span><span>SQL</span>
+        <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Python</span><span>React</span><span>Git</span><span>Node.js</span><span>SQL</span>
+      </div>
+    </div>
+
+    <!-- ============ SERVICES ============ -->
+    <section class="section container" id="services">
+      <div class="section-head reveal">
+        <p class="eyebrow">What I do</p>
+        <h2>Services</h2>
+      </div>
+
+      <div class="cards">
+        <article class="card reveal">
+          <span class="card-num">01</span>
+          <h3>Web Development</h3>
+          <p>Responsive, accessible websites and web apps built with clean, modern HTML, CSS and JavaScript.</p>
+        </article>
+        <article class="card reveal">
+          <span class="card-num">02</span>
+          <h3>UI / UX Design</h3>
+          <p>Simple, user-focused interfaces, from wireframes to polished, pixel-ready layouts.</p>
+        </article>
+        <article class="card reveal">
+          <span class="card-num">03</span>
+          <h3>Software Solutions</h3>
+          <p>Problem-solving with code: scripts, tools and back-end logic that make everyday tasks easier.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section container" id="projects">
+      <div class="section-head reveal">
+        <p class="eyebrow">Selected work</p>
+        <h2>Projects</h2>
+      </div>
+
+      <div class="projects">
+        <a href="#" class="project reveal">
+          <div class="project-thumb"><span>Image</span></div>
+          <div class="project-info">
+            <h3>Project One</h3>
+            <p>Short description of the project and what it solves.</p>
+            <ul class="tags"><li>HTML</li><li>CSS</li><li>JS</li></ul>
+          </div>
+        </a>
+        <a href="#" class="project reveal">
+          <div class="project-thumb"><span>Image</span></div>
+          <div class="project-info">
+            <h3>Project Two</h3>
+            <p>Short description of the project and what it solves.</p>
+            <ul class="tags"><li>Python</li><li>SQL</li></ul>
+          </div>
+        </a>
+        <a href="#" class="project reveal">
+          <div class="project-thumb"><span>Image</span></div>
+          <div class="project-info">
+            <h3>Project Three</h3>
+            <p>Short description of the project and what it solves.</p>
+            <ul class="tags"><li>React</li><li>Node.js</li></ul>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section container about" id="about">
+      <div class="about-box reveal">
+        <div>
+          <p class="eyebrow">About me</p>
+          <h2>Curious mind, <br />clean code.</h2>
+        </div>
+        <div class="about-copy">
+          <p>I’m a Computer Science student in Ghana with a passion for building useful, well-designed software. I enjoy turning ideas into working products and learning something new with every project.</p>
+          <p>When I’m not coding, I’m exploring new tools, improving my design eye, and looking for opportunities to grow as a developer.</p>
+          <a href="#contact" class="btn btn-yellow">Get in touch
+            <span class="arrow-circle" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section container" id="contact">
+      <div class="contact reveal">
+        <h2>Let’s build something <span class="hl">great</span> together.</h2>
+        <p>Have an opportunity or a project in mind? I’d love to hear from you.</p>
+        <a href="mailto:you@example.com" class="btn btn-yellow">you@example.com
+          <span class="arrow-circle" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer container">
+    <p>© <span id="year"></span> Florence Ashiagbor. All rights reserved.</p>
+    <ul>
+      <li><a href="#" target="_blank" rel="noopener">GitHub</a></li>
+      <li><a href="#" target="_blank" rel="noopener">LinkedIn</a></li>
+      <li><a href="#" target="_blank" rel="noopener">Twitter</a></li>
+    </ul>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
